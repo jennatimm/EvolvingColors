@@ -5,13 +5,42 @@
     <meta charset="utf-8">
     <title>Game Project Title Goes Here</title>
   
+    <link rel="stylesheet" type="text/css" href="style.css"/>
     <script type="text/javascript" src="./assetmanager.js"></script>
+    <script type="text/javascript" src="./plant.js"></script>
+    <script type="text/javascript" src="./automata.js"></script>
+    <script type="text/javascript" src="./animats.js"></script>
     <script type="text/javascript" src="./timer.js"></script>
     <script type="text/javascript" src="./gameengine.js"></script>
     <script type="text/javascript" src="./util.js"></script>
     <script type="text/javascript" src="./main.js"></script>
 </head>
 <body>
-    <canvas id="gameWorld" width="1024" height="768" style="background: white; border: 1px solid black" tabindex="0" autofocus></canvas>
+    <canvas id="gameWorld" width="1024" height="600" style="background: white; border: 1px solid black" tabindex="0" autofocus></canvas>
+    <div>
+        <label for="deathRateP">Plant Life Span</label>
+        <input type="range" id="deathRateP" min="100" max="2000" value="100" class="slider">
+        <label for="deathRateA">Animat Life Span</label>
+        <input type="range" id="deathRateA" min="100" max="1000" value="100" class="slider">
+        <label for="birthRateA">Animat Birth Rate</label>
+        <input type="range" id="birthRateA" min="7" max="15" value="7" class="slider">
+    </div>
+    <div>
+        <button id="plant" class="buttons">
+            <h1> 
+                Add Plant
+            </h1>
+        </button> 
+        <button id="animat" class="buttons">
+            <h1> 
+                Add Animat
+            </h1>
+        </button> 
+        <button id="clear" class="buttons">
+            <h1> 
+                Clear
+            </h1>
+        </button> 
+    </div>
 </body>
 </html>
